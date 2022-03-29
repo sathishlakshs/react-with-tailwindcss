@@ -14,7 +14,7 @@ function App() {
   return (
     <main className='h-screen overflow-y-hidden'>
     <Header setIsOpen={setIsOpen} />
-    <SideBar />
+    <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
@@ -27,13 +27,13 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
-    <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+    {/* <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
         <MenuCard />
         <MenuCard />
         <MenuCard />
         <MenuCard />
         <MenuCard />
-      </Drawer>
+      </Drawer> */}
     </main>
   );
 }
